@@ -3,7 +3,7 @@ I like coding :з
 <br>
 > ### Know
 > - Pyhton
-> - C++
+> - C++ (plus Arduino)
 > - C#
 > -  Js, Html, Css
 > - [В++](https://neolurk.org/wiki/%D0%92%2B%2B) 🌚
