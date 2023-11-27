@@ -6,4 +6,4 @@ I like coding :з
 > - C++ (plus Arduino)
 > - C#
 > -  Js, Html, Css
-> - [В++](https://neolurk.org/wiki/%D0%92%2B%2B) 🌚
+> - [В††](https://neolurk.org/wiki/%D0%92%2B%2B) 🌚
