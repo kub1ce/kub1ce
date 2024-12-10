@@ -1,6 +1,11 @@
 # <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px"> Kubice
 
-> I like coding :з
+<a href="#">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=10000&color=AACC00&vCenter=true&repeat=false&width=375&height=32&lines=YO!" alt="Hello text"/>
+</a>
+
+
+<!-- > I like coding :з -->
 
 <hr>
 <p>
