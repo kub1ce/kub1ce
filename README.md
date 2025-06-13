@@ -1,4 +1,5 @@
-<div style="background:url('./crack.svg') no-repeat center 24%">
+<div style="position: relative;">
+<img src="https://raw.githubusercontent.com/kub1ce/kub1ce/main/crack.svg" style="position: absolute; z-index: -1; width: 100%; height: 100%; max-width: 100%; max-height: 100%; top: 0; left: 0; object-fit: contain;">
 
 # <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px; border-radius:50%; margin-right:10px"> Kubice
 
