@@ -1,36 +1,52 @@
-# <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px"> Kubice
+<div style="background:url('./crack.svg') no-repeat center 24%">
 
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=10000&color=AACC00&vCenter=true&repeat=false&width=375&height=32&lines=YO!" alt="Hello text"/>
-</a>
+# <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px; border-radius:50%; margin-right:10px"> Kubice
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kub1ce&show_icons=true&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00" width="400px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kub1ce&layout=compact&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00&hide=ShaderLab,hlsl,html,css,javascript,Slim,scss" width="375px"/>
+</div>
 
-<!-- > I like coding :з -->
+## Experience
+<div align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Non--Commercial Dev-2CA5E0?style=for-the-badge&label=4+ YEARS&labelColor=dark-gray">
+</div>
 
-<hr>
-<p>
-  <b>My contacts:</b>
-  <br/>
+## Tech Stack
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+</div>
+
+## Projects
+
+<details>
+<summary>Expand</summary>
+
+| Project | Description | Tech Stack |
+|---------|-------------|------------|
+| XOR AI | Телеграам бот для получения текста с изображений (OCR) с повышенной точностью распознования формул | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> |
+| Dungeon Flux | Игра в жанре рогалик с процедурной генерацией подземелий | <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/> <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"/> <img src="https://img.shields.io/badge/MonoGame-000000?style=for-the-badge&logo=monogame&logoColor=white" alt="MonoGame"/> |
+| Andrusha | Технология, обеспечивающая передачу и обработку сигнала между группой БПЛА для их взаимодействия во время полета | <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/> <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino"/> <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32"/> |
+
+</details>
+
+## Contact
+
+<div align="center">
   <a href="https://t.me/JustKubice">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
   </a>
-</p>
+</div>
 
-<p>
-  <a href="#">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kub1ce&layout=compact&bg_color=0000&text_color=E8E8DC&title_color=E8E8DC&hide_border=False&hide=ShaderLab,hlsl,html,css,javascript,Slim,scss" width="375px" alt="GitHub Stats"/>
-  </a>
-</p>
+<hr style="margin: 24px 0">
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=kub1ce&color=88AA00&style=for-the-badge" alt="Profile Views"/>
+</div>
 
-<hr>
-
-> ### Know
-> - Pyhton
-> - C++ (plus Arduino)
-> - C#
-> -  Js, Html, Css
-> - [В††](https://neolurk.org/wiki/%D0%92%2B%2B) 🌚
-
-<hr>
-
-![](https://komarev.com/ghpvc/?username=kub1ce&color=blueviolet)
+</div>
