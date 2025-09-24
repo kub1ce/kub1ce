@@ -1,9 +1,8 @@
 <!-- <div style="position: relative;">
 	<img src="https://raw.githubusercontent.com/kub1ce/kub1ce/main/crack.svg" style="position: absolute; z-index: -1; width: 100%; height: 100%; max-width: 100%; max-height: 100%; top: 0; left: 0; object-fit: contain;">
-</div>
 -->
 
-# <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px; border-radius:50%; margin-right:10px"> Kubice
+# <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px; border-radius:50%; margin-right:10px" alt="Kubice avatar image"> Kubice
 
 <div align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=kub1ce&show_icons=true&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00" width="400px"/>
@@ -12,7 +11,7 @@
 
 ## Experience
 <div align="center">
-  	<img src="https://img.shields.io/badge/Non--Commercial_Dev-2CA5E0?style=for-the-badge&logo=code&logoColor=white&label=4%2B%20YEARS&labelColor=808080" alt="Non-Commercial Development"/>
+  	<img src="https://img.shields.io/badge/Non--Commercial_Dev-2CA5E0?style=for-the-badge&logo=code&logoColor=white&label=5%2B%20YEARS&labelColor=808080" alt="Non-Commercial Development"/>
 </div>
 
 ## Tech Stack
@@ -33,16 +32,16 @@
 
 | Project | Description | Tech Stack |
 |---------|-------------|------------|
-| XOR AI | Телеграам бот для получения текста с изображений (OCR) с повышенной точностью распознования формул | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> |
-| Dungeon Flux | Игра в жанре рогалик с процедурной генерацией подземелий | <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/> <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"/> <img src="https://img.shields.io/badge/MonoGame-000000?style=for-the-badge&logo=monogame&logoColor=white" alt="MonoGame"/> |
-| Andrusha | Технология, обеспечивающая передачу и обработку сигнала между группой БПЛА для их взаимодействия во время полета | <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/> <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino"/> <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32"/> |
+| [XOR AI](https://github.com/kub1ce/XOR-AI) | Телеграам бот для получения текста с изображений (OCR) с повышенной точностью распознования формул | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> |
+| [Dungeon Flux](https://github.com/kub1ce/Dungeon-Flux) | Игра в жанре рогалик с процедурной генерацией подземелий | <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/> <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"/> <img src="https://img.shields.io/badge/MonoGame-000000?style=for-the-badge&logo=monogame&logoColor=white" alt="MonoGame"/> |
+| [Andrusha](https://github.com/sir-andrusha) | Технология, обеспечивающая передачу и обработку сигнала между группой БПЛА для их взаимодействия во время полета | <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/> <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino"/> <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32"/> |
 
 </details>
 
 ## Contact
 
 <div align="center">
-	<a href="https://t.me/JustKubice">
+	<a href="https://t.me/Kubice">
 		<img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
 	</a>
 </div>
@@ -51,3 +50,5 @@
 <div align="center">
   	<img src="https://komarev.com/ghpvc/?username=kub1ce&color=88AA00&style=for-the-badge" alt="Profile Views"/>
 </div>
+
+<!-- </div> -->
