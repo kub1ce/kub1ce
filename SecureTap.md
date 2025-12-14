@@ -1,4 +1,4 @@
-# Ссылки слайда с актуальностью
+<!-- # Ссылки слайда с актуальностью
 
 > ## Про NFC и Bluetooth в смартфонах
 > - https://www.marketresearchfuture.com/reports/global-near-field-communication-market-1590
@@ -49,4 +49,4 @@
 > - https://www.assaabloy.com/ee/ru
 > 
 > ## Sigur 
-> - https://sigur.com/
+> - https://sigur.com/ -->
