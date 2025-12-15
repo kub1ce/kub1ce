@@ -4,111 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #1e1e1e;
             color: #E8E8DC;
-            margin: 0;
-            padding: 20px;
+            min-height: 100vh;
         }
-        h1, h2 {
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 0;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            padding: 40px 60px;
+            /* border-bottom: 2px solid #88AA00; */
+            position: relative;
+        }
+        .header:before {
+            content:'';
+            position:absolute;
+            width:100%;
+            height:2;
+            background: linear-gradient(to right, transparent, #88AA00, transparent);
+            bottom:0;
+            left:0;
+        }
+
+        .header img[style*="position: absolute"] {
+            position: absolute !important;
+            z-index: -1 !important;
+            opacity: 0.05;
+        }
+
+        h1 {
             color: #88AA00;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
+
+        h2 {
+            color: #88AA00;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #88AA00;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+            justify-items: center;
+        }
+
+        .main-content {
+            padding: 40px 60px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .experience-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #252525;
+            border-radius: 8px;
+            border-left: 4px solid #88AA00;
+        }
+
+        .tech-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            justify-items: center;
+            margin: 25px 0;
+        }
+
+        .tech-badges img {
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .tech-badges img:hover {
+            transform: scale(1.1);
+        }
+
         a {
             color: #2CA5E0;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
+
         a:hover {
+            color: #88AA00;
             text-decoration: underline;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 25px 0;
+            background-color: #252525;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
+
         th, td {
             border: 1px solid #444;
-            padding: 10px;
+            padding: 15px;
             text-align: left;
         }
+
         th {
-            background-color: #333;
+            background-color: #88AA00;
+            color: #1e1e1e;
+            font-weight: 600;
         }
+
+        th img, td img {
+            vertical-align: middle;
+            border-radius: 4px;
+            margin: 5px;
+        }
+
+        tr:hover {
+            background-color: #2a2a2a;
+            transition: background-color 0.2s ease;
+        }
+
         details {
-            margin-top: 20px;
+            margin: 25px 0;
+            padding: 20px;
+            background-color: #252525;
+            border-radius: 8px;
+            border-left: 4px solid #88AA00;
+        }
+
+        summary {
+            cursor: pointer;
+            color: #88AA00;
+            font-size: 1.2em;
+            font-weight: 600;
+            user-select: none;
+            padding: 10px;
+            margin: -10px;
+        }
+
+        summary:hover {
+            color: #a8ca00;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 40px;
+            background-color: #252525;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .contact-section a {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .contact-section a:hover {
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 60px;
+            margin-top: 40px;
+            background-color: #1a1a1a;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+        .footer:before {
+            content:'';
+            position:absolute;
+            width:100%;
+            height:2;
+            background: linear-gradient(to right, transparent, #88AA00, transparent);
+            top:0;
+            left:0;
+        }
+
+        .footer img {
+            border-radius: 8px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #444, transparent);
+            /* background: red; */
+            margin: 20px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .tech-badges {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
-    <div style="position: relative;">
-        <img src="https://raw.githubusercontent.com/kub1ce/kub1ce/main/crack.svg" style="position: absolute; z-index: -1; width: 100%; height: 100%; max-width: 100%; max-height: 100%; top: 0; left: 0; object-fit: contain;">
-    
-    <h1 id="-img-src-https-avatars-githubusercontent-com-u-83603203-v-4-style-height-24px-border-radius-50-margin-right-10px-alt-kubice-avatar-image-kubice"><img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px; border-radius:50%; margin-right:10px" alt="Kubice avatar image"> Kubice</h1>
-    <div align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=kub1ce&show_icons=true&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00" width="400px"/>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kub1ce&layout=compact&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00&hide=ShaderLab,hlsl,html,css,javascript,Slim,scss" width="375px"/>
-    </div>
-    
-    <h2 id="experience">Experience</h2>
-    <div align="center">
-          <img src="https://img.shields.io/badge/Non--Commercial_Dev-2CA5E0?style=for-the-badge&logo=code&logoColor=white&label=5%2B%20YEARS&labelColor=808080" alt="Non-Commercial Development"/>
-    </div>
-    
-    <h2 id="tech-stack">Tech Stack</h2>
-    <div align="center">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/>
-        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-    </div>
-    
-    <h2 id="projects">Projects</h2>
-    <details>
-    <summary>Expand</summary>
-    
-    <table>
-        <tr>
-            <th>Project</th>
-            <th>Description</th>
-            <th>Tech Stack</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kub1ce/XOR-AI">XOR AI</a></td>
-            <td>Телеграам бот для получения текста с изображений (OCR) с повышенной точностью распознования формул</td>
-            <td><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kub1ce/Dungeon-Flux">Dungeon Flux</a></td>
-            <td>Игра в жанре рогалик с процедурной генерацией подземелий</td>
-            <td><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"> <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="DotNet"> <img src="https://img.shields.io/badge/MonoGame-000000?style=for-the-badge&logo=monogame&logoColor=white" alt="Monogame"></td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/sir-andrusha">Andrusha</a></td>
-            <td>Технология, обеспечивающая передачу и обработку сигнала между группой БПЛА для их взаимодействия во время полета</td>
-            <td><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino"> <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32"></td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/kub1ce/Terraform-LogViewer_XOREK">Terraform LogViewer</a></td>
-            <td>Хакатон от компании T1 - Финалист. Инструмент для просмотра и анализа логов Terraform в удобном интерфейсе</td>
-            <td><img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=FastApi&logoColor=white&label=FastAPI" alt="Python FastAPI"> <img src="https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=Docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Js-yellow?style=for-the-badge&logo=javascript&logoColor=black" alt="JS"></td>
-        </tr>
-    </table>
-    
-    </details>
-    
-    <h2 id="contact">Contact</h2>
-    <div align="center">
-        <a href="https://t.me/Kubice">
-            <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" style="border-radius: 8px;"/>
-        </a>
-    </div>
-    
-    <p><hr style="margin: 24px 0"></p>
-    <div align="center">
-          <img src="https://komarev.com/ghpvc/?username=kub1ce&color=88AA00&style=for-the-badge" alt="Profile Views"/>
-    </div>
+    <div class="container">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/kub1ce/kub1ce/main/crack.svg" style="position: absolute; z-index: -1; width: 100%; height: 100%; max-width: 100%; max-height: 100%; top: 0; left: 0; object-fit: contain;">
+            
+            <h1><img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:32px; border-radius:50%" alt="Kubice avatar image"> Kubice</h1>
+            
+            <div class="stats">
+                <div>
+                    <img src="https://github-readme-stats.vercel.app/api?username=kub1ce&show_icons=true&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00" width="100%"/>
+                </div>
+                <div>
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kub1ce&layout=compact&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00&hide=ShaderLab,hlsl,html,css,javascript,Slim,scss" width="100%"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <section class="experience-section">
+                <h2>Experience</h2>
+                <img src="https://img.shields.io/badge/Non--Commercial_Dev-2CA5E0?style=for-the-badge&logo=code&logoColor=white&label=5%2B%20YEARS&labelColor=808080" alt="Non-Commercial Development"/>
+            </section>
+
+            <section>
+                <h2>Tech Stack</h2>
+                <div class="tech-badges">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+                    <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"/>
+                    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+                </div>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <details open>
+                <summary>Expand</summary>
+                
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Tech Stack</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/kub1ce/XOR-AI">XOR AI</a></td>
+                        <td>Телеграам бот для получения текста с изображений (OCR) с повышенной точностью распознания формул</td>
+                        <td><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/kub1ce/Dungeon-Flux">Dungeon Flux</a></td>
+                        <td>Игра в жанре рогалик с процедурной генерацией подземелий</td>
+                        <td><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"> <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="DotNet"> <img src="https://img.shields.io/badge/MonoGame-000000?style=for-the-badge&logo=monogame&logoColor=white" alt="Monogame"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/sir-andrusha">Andrusha</a></td>
+                        <td>Технология, обеспечивающая передачу и обработку сигнала между группой БПЛА для их взаимодействия во время полета</td>
+                        <td><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino"> <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/kub1ce/Terraform-LogViewer_XOREK">Terraform LogViewer</a></td>
+                        <td>Хакатон от компании T1 - Финалист. Инструмент для просмотра и анализа логов Terraform в удобном интерфейсе</td>
+                        <td><img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=FastApi&logoColor=white&label=FastAPI" alt="Python FastAPI"> <img src="https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=Docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Js-yellow?style=for-the-badge&logo=javascript&logoColor=black" alt="JS"></td>
+                    </tr>
+                </table>
+                
+                </details>
+            </section>
+
+            <section class="contact-section">
+                <h2>Contacts</h2>
+                <a href="https://t.me/Kubice">
+                    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" style="border-radius: 8px;"/>
+                </a>
+            </section>
+        </div>
+
+        <div class="footer">
+            <img src="https://komarev.com/ghpvc/?username=kub1ce&color=88AA00&style=for-the-badge" alt="Profile Views"/>
+        </div>
     </div>
 </body>
 </html>
