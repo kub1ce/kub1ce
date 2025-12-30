@@ -4,10 +4,10 @@
 
 # <img src="https://avatars.githubusercontent.com/u/83603203?v=4" style="height:24px; border-radius:50%; margin-right:10px" alt="Kubice avatar image"> Kubice
 
-<div align="center">
+<!-- <div align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=kub1ce&show_icons=true&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00" width="400px"/>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kub1ce&layout=compact&theme=radical&hide_border=true&bg_color=00000000&text_color=E8E8DC&title_color=88AA00&hide=ShaderLab,hlsl,html,css,javascript,Slim,scss" width="375px"/>
-</div>
+</div> -->
 
 ## Experience
 <div align="center">
@@ -23,6 +23,7 @@
 	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 	<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
 	<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+	<img src="https://img.shields.io/badge/PHP-grey?style=for-the-badge&logo=PHP&logoColor=white" alt="PHP">
 </div>
 
 ## Projects
