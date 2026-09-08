@@ -64,9 +64,10 @@ Currently working mostly with:
 
 </tr>
 </table>
+
 ---
 
-# `03` — Selected projects
+## `03` — Selected projects
 
 <br>
 
@@ -180,8 +181,6 @@ I keep most of them around anyway.
 </a>
 
 </div>
-
----
 
 ---
 
